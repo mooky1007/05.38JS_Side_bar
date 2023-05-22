@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="./reset.css">
+<link rel="stylesheet" href="./style.css">
+<script src="./review.js"></script>
+<div class="inner_body">
+    <button onclick="sideBar.open()">Right SideBar Open</button>
+    <button onclick="sideBar2.open()">Left SideBar Open</button>
+
+    <aside class="side_bar js-side_bar">
+        <ul>
+            <li><a href="#none">Home</a></li>
+            <li><a href="#none">Product</a></li>
+            <li><a href="#none">About</a></li>
+            <li><a href="#none">Contact</a></li>
+        </ul>
+        <button onclick="sideBar.close()">SideBar Close</button>
+    </aside>
+
+    <aside class="side_bar js-side_bar2">
+        <ul>
+            <li>
+            <li><a href="#none">Home</a></li>
+            <li><a href="#none">Product</a></li>
+            <li><a href="#none">About</a></li>
+            <li><a href="#none">Contact</a></li>
+        </ul>
+        <button onclick="sideBar2.close()">SideBar Close</button>
+    </aside>
+</div>
+
+<script>
+    const sideBar = new SideBar('.js-side_bar', 'right');
+    const sideBar2 = new SideBar('.js-side_bar2', 'left');
+</script>
